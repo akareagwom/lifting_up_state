@@ -1,7 +1,14 @@
 const Child = () => {
+    const data ={
+        name:'akare',
+        height:'170cm',
+        age:'17'
+    }
+
+
     return (  
         <>
-        hello
+        <button type="button">click</button>
         </>
     );
 }
