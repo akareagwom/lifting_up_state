@@ -1,14 +1,13 @@
-const Child = () => {
-    const data ={
-        name:'akare',
-        height:'170cm',
-        age:'17'
-    }
+const Child = ({info}) => {
 
 
     return (  
         <>
-        <button type="button">click</button>
+        {info.map((infos)=>(
+            <div className="">
+                {infos.name}
+            </div>
+        ))}
         </>
     );
 }

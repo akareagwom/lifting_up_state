@@ -4,16 +4,16 @@ import Discuss from "../components/discuss"
 import Child from "@/components/child"
 import Parent from "@/components/parent"
 import Nav from "@/components/nav"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 export default function Home() {
   return (
-   <div className="bg-[#afaeaf] h-screen">
-    {/* <Discuss/> */}
-    {/* <Talk/> */}
-    {/* <Parent/> */}
-    {/* <Child/>   */}
-    <Nav></Nav>
-   </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Parent/>} />
+        
+      </Routes>
+    </BrowserRouter>
   )
 }
