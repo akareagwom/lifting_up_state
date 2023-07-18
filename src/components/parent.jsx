@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Child from "./child";
+import logo from '../assets/bg.avif'
 
 
 const Parent = () => {
@@ -11,6 +12,8 @@ const Parent = () => {
         {name:'rose',age:3},
         {name:'tulip',age:5}
     ]);
+    const [email,setEmail]= useState('');
+    const [password,setPassword]= useState('');
 
     // useEffect(()=>{
 
@@ -24,12 +27,16 @@ const Parent = () => {
     }
     
     return ( 
-        <div className="bg-red-400 h-screen">
+        <div className="bg-[url('../assets/bg.avif')] h-screen">
         
         <button onClick={handleClick}>click</button>
         <p>{name}</p>
         <button onClick={handle}>click me</button>
         <h1>{count}</h1>
+        <form action="">
+            <input type="email" />
+            <input type="password" />
+        </form>
 
 
         <div className="info">

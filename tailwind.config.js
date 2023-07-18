@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import file from './src/assets/bg.avif'
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,6 +12,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          'back':"url('/src/assets/bg.avif)",
       },
     },
   },
