@@ -5,6 +5,7 @@ import Child from "@/components/child"
 import Parent from "@/components/parent"
 import Nav from "@/components/nav"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { App } from "@/Dashboard";
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Parent/>} />
-        
+        <Route path="/App" element={<App/>}/>
       </Routes>
     </BrowserRouter>
   )
