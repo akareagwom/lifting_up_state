@@ -1,7 +1,8 @@
 export const App =()=>{
+    
     return(
         <>
-        hello
+        <p>3</p>
         </>
     )
 }
